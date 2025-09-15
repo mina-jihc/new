@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Candal&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+    <style>
+      body {
+        width: 100%;
+      }
+      .top {
+        display: flex;
+        flex-direction: row;
+      }
+      .top h2 {
+        font-family: Candal, sans-serif;
+        font-size: 30px;
+      }
+      .top1 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+      .top1 img {
+        width: 60%;
+      }
+      .buttons {
+        margin-left: 750px;
+      }
+      .buttons button {
+        border: none;
+        background-color: white;
+        color: darkgray;
+        margin-top: 40px;
+        margin-left: 30px;
+        cursor: pointer;
+      }
+      .buttons button:hover {
+        color: black;
+      }
+      .text {
+        display: flex;
+        flex-direction: row;
+      }
+      .text p {
+        position: absolute;
+        top: 370px;
+        left: 210px;
+        color: hsl(236, 13%, 42%);
+      }
+      .text button {
+        background-color: hsl(5, 85%, 63%);
+        height: 30px;
+        width: 100px;
+        color: black;
+        cursor: pointer;
+        position: absolute;
+        left: 210px;
+        top: 480px;
+        border: none;
+        font-weight: bold;
+      }
+      .text button:hover {
+        background-color: aquamarine;
+      }
+      h1 {
+        font-family: Candal, sans-serif;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 300px;
+        margin-right: 200px;
+        position: absolute;
+        right: 100px;
+      }
+      .right h3 {
+        color: hsl(35, 77%, 62%);
+        font-family: Bebas-Neue, sans-serif;
+        padding: 5px 10px;
+      }
+      .right strong {
+        color: white;
+        font-family: Bebas-Neue, sans-serif;
+        padding: 5px 10px;
+      }
+      .right p {
+        color: aliceblue;
+        font-family: Bebas-Neue, sans-serif;
+        padding: 5px 10px;
+      }
+      .right hr {
+        background: aliceblue;
+        height: 1px;
+        border: none;
+        margin: 10px 0;
+      }
+      .general {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+      }
+      .three {
+        display: flex;
+        flex-direction: row;
+      }
+      .three img {
+        width: 80px;
+        height: 100px;
+        position: absolute;
+        bottom: 5px;
+      }
+      .texts {
+        display: flex;
+        flex-direction: column;
+        margin-left: 90px;
+        font-family: Bebas-Neue, sans-serif;
+      }
+      .texts h3 {
+        color: hsl(5, 85%, 63%);
+        font-weight: bold;
+        font-family: Candal, sans-serif;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <h2>W.</h2>
+      <div class="buttons">
+        <button>Home</button>
+        <button>New</button>
+        <button>Popular</button>
+        <button>Trending</button>
+        <button>Categories</button>
+      </div>
+    </div>
+    <div class="general">
+      <div class="top1">
+        <img src="assets/images/image-web-3-desktop.jpg" />
+        <div class="text">
+          <h1>The Bright<br />Future of<br />Web 3.0?</h1>
+          <p>
+            We dive into the next evolution of the web that<br />claims to put
+            the power of the platforms back<br />into the hands of the people.
+            But is it really<br />fulfilling its promise?
+          </p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+      <div class="right">
+        <h3>New</h3>
+
+        <strong>Hydrogen VS Electric Cars</strong>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <hr />
+
+        <strong>The Downsides of AI Artistry</strong>
+        <p>
+          What are the possible adverse effects of on-demand AI image
+          generation?
+        </p>
+        <hr />
+
+        <strong>Is VC Funding Drying Up?</strong>
+        <p>
+          Private funding by VC firms is down 50% YOY. We take a look at what
+          that means.
+        </p>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="three">
+        <img src="assets/images/image-retro-pcs.jpg" />
+        <div class="texts">
+          <h3>01</h3>
+          <strong>Reviving Retro PCs</strong>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="three">
+        <img src="assets/images/image-top-laptops.jpg" />
+        <div class="texts">
+          <h3>02</h3>
+          <strong>Top 10 Laptops of 2022</strong>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="three">
+        <img src="assets/images/image-gaming-growth.jpg" />
+        <div class="texts">
+          <h3>03</h3>
+          <strong>The Growth of Gaming</strong>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
